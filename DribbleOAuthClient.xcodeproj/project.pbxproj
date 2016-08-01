@@ -7,9 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E9731F9E1D4C661200A76845 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9731F9D1D4C661200A76845 /* Alamofire.framework */; };
+		E9731FA01D4C8C9700A76845 /* DribbleClient+Shots.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9731F9F1D4C8C9600A76845 /* DribbleClient+Shots.swift */; };
 		E9954FFE1D49045100053193 /* DribbleOAuthClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9954FF41D49045100053193 /* DribbleOAuthClient.framework */; };
 		E99550031D49045100053193 /* DribbleOAuthClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99550021D49045100053193 /* DribbleOAuthClientTests.swift */; };
 		E99550051D49045100053193 /* DribbleOAuthClient.h in Headers */ = {isa = PBXBuildFile; fileRef = E9954FF71D49045100053193 /* DribbleOAuthClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E995501E1D4909E700053193 /* DribbleClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E995501D1D4909E700053193 /* DribbleClient.swift */; };
+		E99550231D490A3800053193 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E99550221D490A3800053193 /* ReactiveCocoa.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +27,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E9731F9D1D4C661200A76845 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../../Library/Developer/Xcode/DerivedData/Change-evsofqbquqiehrhhrktvhkreljls/Build/Products/Debug-iphoneos/Alamofire.framework"; sourceTree = "<group>"; };
+		E9731F9F1D4C8C9600A76845 /* DribbleClient+Shots.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DribbleClient+Shots.swift"; sourceTree = "<group>"; };
 		E9954FF41D49045100053193 /* DribbleOAuthClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DribbleOAuthClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9954FF71D49045100053193 /* DribbleOAuthClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DribbleOAuthClient.h; sourceTree = "<group>"; };
 		E9954FF81D49045100053193 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E9954FFD1D49045100053193 /* DribbleOAuthClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DribbleOAuthClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E99550021D49045100053193 /* DribbleOAuthClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DribbleOAuthClientTests.swift; sourceTree = "<group>"; };
 		E99550041D49045100053193 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E995501D1D4909E700053193 /* DribbleClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DribbleClient.swift; sourceTree = "<group>"; };
+		E99550201D490A1000053193 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = "../../../Documents/ReactiveCocoa/build/Debug-iphoneos/ReactiveCocoa.framework"; sourceTree = "<group>"; };
+		E99550221D490A3800053193 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = "../../../Library/Developer/Xcode/DerivedData/Change-evsofqbquqiehrhhrktvhkreljls/Build/Products/Debug-iphonesimulator/ReactiveCocoa.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +45,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E99550231D490A3800053193 /* ReactiveCocoa.framework in Frameworks */,
+				E9731F9E1D4C661200A76845 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +67,7 @@
 				E9954FF61D49045100053193 /* DribbleOAuthClient */,
 				E99550011D49045100053193 /* DribbleOAuthClientTests */,
 				E9954FF51D49045100053193 /* Products */,
+				E995501F1D490A1000053193 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,6 +85,8 @@
 			children = (
 				E9954FF71D49045100053193 /* DribbleOAuthClient.h */,
 				E9954FF81D49045100053193 /* Info.plist */,
+				E995501D1D4909E700053193 /* DribbleClient.swift */,
+				E9731F9F1D4C8C9600A76845 /* DribbleClient+Shots.swift */,
 			);
 			path = DribbleOAuthClient;
 			sourceTree = "<group>";
@@ -84,6 +98,16 @@
 				E99550041D49045100053193 /* Info.plist */,
 			);
 			path = DribbleOAuthClientTests;
+			sourceTree = "<group>";
+		};
+		E995501F1D490A1000053193 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E9731F9D1D4C661200A76845 /* Alamofire.framework */,
+				E99550221D490A3800053193 /* ReactiveCocoa.framework */,
+				E99550201D490A1000053193 /* ReactiveCocoa.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,6 +174,7 @@
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = CJEWB8K5UY;
 						DevelopmentTeamName = "tian xiang gen (Personal Team)";
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 					E9954FFC1D49045100053193 = {
@@ -200,6 +225,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E995501E1D4909E700053193 /* DribbleClient.swift in Sources */,
+				E9731FA01D4C8C9700A76845 /* DribbleClient+Shots.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,7 +347,9 @@
 		E99550091D49045100053193 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -331,6 +360,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mylonly.DribbleOAuthClient;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -338,7 +368,9 @@
 		E995500A1D49045100053193 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -394,6 +426,7 @@
 				E995500A1D49045100053193 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E995500B1D49045100053193 /* Build configuration list for PBXNativeTarget "DribbleOAuthClientTests" */ = {
 			isa = XCConfigurationList;
@@ -402,6 +435,7 @@
 				E995500D1D49045100053193 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
