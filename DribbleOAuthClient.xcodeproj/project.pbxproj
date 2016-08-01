@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		E951BAB41D4F46D700310EB7 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E951BAB31D4F46D700310EB7 /* ReactiveCocoa.framework */; };
 		E951BAB61D4F470600310EB7 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E951BAB51D4F470600310EB7 /* Alamofire.framework */; };
+		E9551FED1D4F4D40000C8699 /* Alamofire.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = E951BAB51D4F470600310EB7 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E9551FEE1D4F4D43000C8699 /* ReactiveCocoa.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = E951BAB31D4F46D700310EB7 /* ReactiveCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E9731FA01D4C8C9700A76845 /* DribbleClient+Shots.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9731F9F1D4C8C9600A76845 /* DribbleClient+Shots.swift */; };
 		E9954FFE1D49045100053193 /* DribbleOAuthClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9954FF41D49045100053193 /* DribbleOAuthClient.framework */; };
 		E99550031D49045100053193 /* DribbleOAuthClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99550021D49045100053193 /* DribbleOAuthClientTests.swift */; };
@@ -25,6 +27,21 @@
 			remoteInfo = DribbleOAuthClient;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E9551FEC1D4F4D35000C8699 /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E9551FEE1D4F4D43000C8699 /* ReactiveCocoa.framework in Copy Frameworks */,
+				E9551FED1D4F4D40000C8699 /* Alamofire.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		E951BAB31D4F46D700310EB7 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = "../../../Library/Developer/Xcode/DerivedData/Change-ctjdltrbnwpjwqdviwumpglhxdtb/Build/Products/Debug-iphonesimulator/ReactiveCocoa.framework"; sourceTree = "<group>"; };
@@ -130,6 +147,7 @@
 				E9954FF01D49045100053193 /* Frameworks */,
 				E9954FF11D49045100053193 /* Headers */,
 				E9954FF21D49045100053193 /* Resources */,
+				E9551FEC1D4F4D35000C8699 /* Copy Frameworks */,
 			);
 			buildRules = (
 			);
