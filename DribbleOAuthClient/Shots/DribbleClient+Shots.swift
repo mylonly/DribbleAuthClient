@@ -9,6 +9,7 @@
 import Foundation
 import ReactiveCocoa
 import Result
+import SwiftyJSON
 
 let ShotsList = "/shots"
 
@@ -30,8 +31,8 @@ public enum ShotsListSort:String{
 }
 
 public extension DribbleClient{
-    
-    public func fetchShotsList(list:ShotsListType?,timeFrame:ShotsListTimeFrame?,date:String?,sort:ShotsListSort?) -> SignalProducer<AnyObject,NSError>{
+
+    public func fetchShotsList(list:ShotsListType?,timeFrame:ShotsListTimeFrame?,date:String?,sort:ShotsListSort?) -> SignalProducer<JSON,NSError>{
         var params = [String:String]()
         if let list = list{
             params["list"] = list.rawValue
@@ -48,7 +49,7 @@ public extension DribbleClient{
         return self.requestData(.GET, url: ShotsList, params: params)
     }
     
-    public func fetchShotList(list:ShotsListType,timeFrame:ShotsListTimeFrame,date:String,sort:ShotsListSort,result:(Result<AnyObject,NSError>) -> Void){
+    public func fetchShotList(list:ShotsListType?,timeFrame:ShotsListTimeFrame?,date:String?,sort:ShotsListSort?,result:(Result<JSON,NSError>) -> Void){
         self.fetchShotsList(list: list, timeFrame: timeFrame, date: date, sort: sort).startWithResult(result)
     }
 }

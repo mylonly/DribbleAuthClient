@@ -7,11 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E93D11F91D52DA65006B2825 /* DribbleClient+Shots.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93D11F81D52DA65006B2825 /* DribbleClient+Shots.swift */; };
+		E93D11FB1D52E06A006B2825 /* Shot.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93D11FA1D52E06A006B2825 /* Shot.swift */; };
+		E93D11FF1D530683006B2825 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E93D11FE1D530683006B2825 /* SwiftyJSON.framework */; };
+		E93D12001D53068A006B2825 /* SwiftyJSON.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = E93D11FE1D530683006B2825 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E951BAB41D4F46D700310EB7 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E951BAB31D4F46D700310EB7 /* ReactiveCocoa.framework */; };
 		E951BAB61D4F470600310EB7 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E951BAB51D4F470600310EB7 /* Alamofire.framework */; };
 		E9551FED1D4F4D40000C8699 /* Alamofire.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = E951BAB51D4F470600310EB7 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E9551FEE1D4F4D43000C8699 /* ReactiveCocoa.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = E951BAB31D4F46D700310EB7 /* ReactiveCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E9731FA01D4C8C9700A76845 /* DribbleClient+Shots.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9731F9F1D4C8C9600A76845 /* DribbleClient+Shots.swift */; };
 		E9954FFE1D49045100053193 /* DribbleOAuthClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9954FF41D49045100053193 /* DribbleOAuthClient.framework */; };
 		E99550031D49045100053193 /* DribbleOAuthClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99550021D49045100053193 /* DribbleOAuthClientTests.swift */; };
 		E99550051D49045100053193 /* DribbleOAuthClient.h in Headers */ = {isa = PBXBuildFile; fileRef = E9954FF71D49045100053193 /* DribbleOAuthClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -35,6 +38,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				E93D12001D53068A006B2825 /* SwiftyJSON.framework in Copy Frameworks */,
 				E9551FEE1D4F4D43000C8699 /* ReactiveCocoa.framework in Copy Frameworks */,
 				E9551FED1D4F4D40000C8699 /* Alamofire.framework in Copy Frameworks */,
 			);
@@ -44,9 +48,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		E93D11F81D52DA65006B2825 /* DribbleClient+Shots.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DribbleClient+Shots.swift"; sourceTree = "<group>"; };
+		E93D11FA1D52E06A006B2825 /* Shot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shot.swift; sourceTree = "<group>"; };
+		E93D11FE1D530683006B2825 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "../../../Library/Developer/Xcode/DerivedData/Change-ctjdltrbnwpjwqdviwumpglhxdtb/Build/Products/Debug-iphonesimulator/SwiftyJSON.framework"; sourceTree = "<group>"; };
 		E951BAB31D4F46D700310EB7 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = "../../../Library/Developer/Xcode/DerivedData/Change-ctjdltrbnwpjwqdviwumpglhxdtb/Build/Products/Debug-iphonesimulator/ReactiveCocoa.framework"; sourceTree = "<group>"; };
 		E951BAB51D4F470600310EB7 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../../Library/Developer/Xcode/DerivedData/Change-ctjdltrbnwpjwqdviwumpglhxdtb/Build/Products/Debug-iphonesimulator/Alamofire.framework"; sourceTree = "<group>"; };
-		E9731F9F1D4C8C9600A76845 /* DribbleClient+Shots.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DribbleClient+Shots.swift"; sourceTree = "<group>"; };
 		E9954FF41D49045100053193 /* DribbleOAuthClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DribbleOAuthClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9954FF71D49045100053193 /* DribbleOAuthClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DribbleOAuthClient.h; sourceTree = "<group>"; };
 		E9954FF81D49045100053193 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -61,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E93D11FF1D530683006B2825 /* SwiftyJSON.framework in Frameworks */,
 				E951BAB61D4F470600310EB7 /* Alamofire.framework in Frameworks */,
 				E951BAB41D4F46D700310EB7 /* ReactiveCocoa.framework in Frameworks */,
 			);
@@ -77,6 +84,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E93D11F71D52DA56006B2825 /* Shots */ = {
+			isa = PBXGroup;
+			children = (
+				E93D11F81D52DA65006B2825 /* DribbleClient+Shots.swift */,
+				E93D11FA1D52E06A006B2825 /* Shot.swift */,
+			);
+			path = Shots;
+			sourceTree = "<group>";
+		};
 		E9954FEA1D49045100053193 = {
 			isa = PBXGroup;
 			children = (
@@ -99,10 +115,10 @@
 		E9954FF61D49045100053193 /* DribbleOAuthClient */ = {
 			isa = PBXGroup;
 			children = (
+				E93D11F71D52DA56006B2825 /* Shots */,
 				E9954FF71D49045100053193 /* DribbleOAuthClient.h */,
 				E9954FF81D49045100053193 /* Info.plist */,
 				E995501D1D4909E700053193 /* DribbleClient.swift */,
-				E9731F9F1D4C8C9600A76845 /* DribbleClient+Shots.swift */,
 			);
 			path = DribbleOAuthClient;
 			sourceTree = "<group>";
@@ -119,6 +135,7 @@
 		E995501F1D490A1000053193 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E93D11FE1D530683006B2825 /* SwiftyJSON.framework */,
 				E951BAB51D4F470600310EB7 /* Alamofire.framework */,
 				E951BAB31D4F46D700310EB7 /* ReactiveCocoa.framework */,
 			);
@@ -242,7 +259,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E995501E1D4909E700053193 /* DribbleClient.swift in Sources */,
-				E9731FA01D4C8C9700A76845 /* DribbleClient+Shots.swift in Sources */,
+				E93D11FB1D52E06A006B2825 /* Shot.swift in Sources */,
+				E93D11F91D52DA65006B2825 /* DribbleClient+Shots.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
