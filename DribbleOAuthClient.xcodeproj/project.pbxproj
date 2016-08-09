@@ -19,6 +19,7 @@
 		E99550031D49045100053193 /* DribbleOAuthClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99550021D49045100053193 /* DribbleOAuthClientTests.swift */; };
 		E99550051D49045100053193 /* DribbleOAuthClient.h in Headers */ = {isa = PBXBuildFile; fileRef = E9954FF71D49045100053193 /* DribbleOAuthClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E995501E1D4909E700053193 /* DribbleClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E995501D1D4909E700053193 /* DribbleClient.swift */; };
+		E9C32AE81D59A4C500E93B61 /* Shots.json in Resources */ = {isa = PBXBuildFile; fileRef = E9C32AE71D59A4C500E93B61 /* Shots.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		E99550021D49045100053193 /* DribbleOAuthClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DribbleOAuthClientTests.swift; sourceTree = "<group>"; };
 		E99550041D49045100053193 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E995501D1D4909E700053193 /* DribbleClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DribbleClient.swift; sourceTree = "<group>"; };
+		E9C32AE71D59A4C500E93B61 /* Shots.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Shots.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 			children = (
 				E93D11F81D52DA65006B2825 /* DribbleClient+Shots.swift */,
 				E93D11FA1D52E06A006B2825 /* Shot.swift */,
+				E9C32AE71D59A4C500E93B61 /* Shots.json */,
 			);
 			path = Shots;
 			sourceTree = "<group>";
@@ -241,6 +244,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9C32AE81D59A4C500E93B61 /* Shots.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
