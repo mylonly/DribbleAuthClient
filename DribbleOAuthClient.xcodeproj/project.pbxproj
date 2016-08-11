@@ -11,6 +11,7 @@
 		E93D11FB1D52E06A006B2825 /* Shot.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93D11FA1D52E06A006B2825 /* Shot.swift */; };
 		E93D11FF1D530683006B2825 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E93D11FE1D530683006B2825 /* SwiftyJSON.framework */; };
 		E93D12001D53068A006B2825 /* SwiftyJSON.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = E93D11FE1D530683006B2825 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E945D4BC1D5C414600A1300A /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E945D4BB1D5C414600A1300A /* Profile.swift */; };
 		E951BAB41D4F46D700310EB7 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E951BAB31D4F46D700310EB7 /* ReactiveCocoa.framework */; };
 		E951BAB61D4F470600310EB7 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E951BAB51D4F470600310EB7 /* Alamofire.framework */; };
 		E9551FED1D4F4D40000C8699 /* Alamofire.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = E951BAB51D4F470600310EB7 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -52,6 +53,7 @@
 		E93D11F81D52DA65006B2825 /* DribbleClient+Shots.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DribbleClient+Shots.swift"; sourceTree = "<group>"; };
 		E93D11FA1D52E06A006B2825 /* Shot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shot.swift; sourceTree = "<group>"; };
 		E93D11FE1D530683006B2825 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "../../../Library/Developer/Xcode/DerivedData/Change-ctjdltrbnwpjwqdviwumpglhxdtb/Build/Products/Debug-iphonesimulator/SwiftyJSON.framework"; sourceTree = "<group>"; };
+		E945D4BB1D5C414600A1300A /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		E951BAB31D4F46D700310EB7 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = "../../../Library/Developer/Xcode/DerivedData/Change-ctjdltrbnwpjwqdviwumpglhxdtb/Build/Products/Debug-iphonesimulator/ReactiveCocoa.framework"; sourceTree = "<group>"; };
 		E951BAB51D4F470600310EB7 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../../Library/Developer/Xcode/DerivedData/Change-ctjdltrbnwpjwqdviwumpglhxdtb/Build/Products/Debug-iphonesimulator/Alamofire.framework"; sourceTree = "<group>"; };
 		E9954FF41D49045100053193 /* DribbleOAuthClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DribbleOAuthClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -96,6 +98,14 @@
 			path = Shots;
 			sourceTree = "<group>";
 		};
+		E945D4BA1D5C413800A1300A /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				E945D4BB1D5C414600A1300A /* Profile.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		E9954FEA1D49045100053193 = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +128,7 @@
 		E9954FF61D49045100053193 /* DribbleOAuthClient */ = {
 			isa = PBXGroup;
 			children = (
+				E945D4BA1D5C413800A1300A /* Common */,
 				E93D11F71D52DA56006B2825 /* Shots */,
 				E9954FF71D49045100053193 /* DribbleOAuthClient.h */,
 				E9954FF81D49045100053193 /* Info.plist */,
@@ -263,6 +274,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E995501E1D4909E700053193 /* DribbleClient.swift in Sources */,
+				E945D4BC1D5C414600A1300A /* Profile.swift in Sources */,
 				E93D11FB1D52E06A006B2825 /* Shot.swift in Sources */,
 				E93D11F91D52DA65006B2825 /* DribbleClient+Shots.swift in Sources */,
 			);

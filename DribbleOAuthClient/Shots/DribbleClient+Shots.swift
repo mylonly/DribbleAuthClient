@@ -32,7 +32,7 @@ public enum ShotsListSort:String{
 
 public extension DribbleClient{
 
-    public func fetchShotsList(list:ShotsListType?,timeFrame:ShotsListTimeFrame?,date:String?,sort:ShotsListSort?) -> SignalProducer<JSON,NSError>{
+    public func fetchShotsList(list:ShotsListType?,timeFrame:ShotsListTimeFrame?,date:String?,sort:ShotsListSort?) -> SignalProducer<Array<Shot>,NSError>{
         var params = [String:String]()
         if let list = list{
             params["list"] = list.rawValue
@@ -46,10 +46,17 @@ public extension DribbleClient{
         if let sort = sort {
             params["sort"] = sort.rawValue
         }
-        return self.requestData(.GET, url: ShotsList, params: params)
+        return self.requestData(.GET, url: ShotsList, params: params).map{ json -> Array<Shot> in
+            var shots:Array<Shot> = []
+            for shotDict in json.arrayValue{
+                let shot = Shot(shotDict)
+                shots.append(shot)
+            }
+            return shots
+        }
     }
     
-    public func fetchShotList(list:ShotsListType?,timeFrame:ShotsListTimeFrame?,date:String?,sort:ShotsListSort?,result:(Result<JSON,NSError>) -> Void){
+    public func fetchShotList(list:ShotsListType?,timeFrame:ShotsListTimeFrame?,date:String?,sort:ShotsListSort?,result:(Result<Array<Shot>,NSError>) -> Void){
         self.fetchShotsList(list: list, timeFrame: timeFrame, date: date, sort: sort).startWithResult(result)
     }
 }
