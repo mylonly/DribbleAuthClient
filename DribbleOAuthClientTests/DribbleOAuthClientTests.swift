@@ -7,6 +7,7 @@
 //
 
 import XCTest
+import Result
 @testable import DribbleOAuthClient
 
 class DribbleOAuthClientTests: XCTestCase {
@@ -27,13 +28,26 @@ class DribbleOAuthClientTests: XCTestCase {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
         
-        let expec = expectation(description: "SwiftTest")
+       
+    }
+    
+    func testShotsList(){
+        let expec = expectation(description: "testShotsList")
         client.fetchShotsList(list: ShotsListType.animated, timeFrame: ShotsListTimeFrame.month, date: nil, sort: ShotsListSort.comments).startWithResult { result in
+            XCTAssert(result.error == nil)
             expec.fulfill()
         }
         waitForExpectations(timeout: 15.0, handler: nil)
     }
     
+    func testShot(){
+        let expec = expectation(description: "testShot")
+        client.fetcShotWithID(471756).startWithResult { result in
+            XCTAssert(result.value?.id != nil)
+            expec.fulfill()
+        }
+        waitForExpectations(timeout: 15.0, handler: nil)
+    }
     
     func testPerformanceExample() {
         // This is an example of a performance test case.

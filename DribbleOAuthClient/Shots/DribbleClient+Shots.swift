@@ -56,7 +56,10 @@ public extension DribbleClient{
         }
     }
     
-    public func fetchShotList(list:ShotsListType?,timeFrame:ShotsListTimeFrame?,date:String?,sort:ShotsListSort?,result:(Result<Array<Shot>,NSError>) -> Void){
-        self.fetchShotsList(list: list, timeFrame: timeFrame, date: date, sort: sort).startWithResult(result)
+    public func fetchShotWithID(_ shotID:Int)-> SignalProducer<Shot,NSError>{
+        return self.requestData(.GET, url: ShotsList.appending(String.init(format: "/%d", shotID)), params: nil).map{ json -> Shot in
+            let shot = Shot(json)
+            return shot
+        }
     }
 }
